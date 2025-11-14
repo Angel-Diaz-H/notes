@@ -9,8 +9,8 @@
   --color-foreground: var(--foreground);
 
   /* Fuente */
-  --font-sans: var(--font-momo-trust-sans);
-  --font-mono: var(--font-momo-trust-display);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 
   /* Color principal */
   --color-sidebar-ring: var(--sidebar-ring);
@@ -33,37 +33,22 @@
   /* Colores principales */
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-
-  /* Color del anillo de foco */
+  
+  
   --color-ring: var(--ring);
-  /* Color de fondo para campos de entrada */
   --color-input: var(--input);
-  /* Color de borde */
   --color-border: var(--border);
-  /* Color para acciones destructivas (ej. eliminar) */
   --color-destructive: var(--destructive);
-  /* Color de texto sobre el color de acento */
   --color-accent-foreground: var(--accent-foreground);
-  /* Color de acento */
   --color-accent: var(--accent);
-  /* Color de texto para elementos silenciados */
   --color-muted-foreground: var(--muted-foreground);
-  /* Color de fondo para elementos silenciados */
   --color-muted: var(--muted);
-  /* Color de texto sobre el color secundario */
   --color-secondary-foreground: var(--secondary-foreground);
-  /* Color secundario */
   --color-secondary: var(--secondary);
-  /* Color de texto para popovers */
   --color-popover-foreground: var(--popover-foreground);
-  /* Color de fondo para popovers */
   --color-popover: var(--popover);
-  /* Color de texto para tarjetas */
   --color-card-foreground: var(--card-foreground);
-  /* Color de fondo para tarjetas */
   --color-card: var(--card);
-
-  /* Radios de borde */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -75,13 +60,9 @@
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
 
-  /* Fallbacks para las variables generadas por next/font */
-  --font-momo-trust-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-momo-trust-display: ui-serif, Georgia, "Times New Roman", Times, serif;
-
 
   --radius: 0.625rem;
-  --primary: oklch(0.3164 0.05312500000000002 195);
+  --primary: oklch(53.005% 0.11288 21.605);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -93,7 +74,7 @@
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.356 0.136 27.14);
+  --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
@@ -123,43 +104,25 @@
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
 
-  /* Color de fondo para tarjetas */
   --card: oklch(0.205 0 0);
-  /* Color de texto para tarjetas */
   --card-foreground: oklch(0.985 0 0);
-  /* Color de fondo para popovers */
   --popover: oklch(0.205 0 0);
-  /* Color de texto para popovers */
   --popover-foreground: oklch(0.985 0 0);
-  /* Color secundario */
   --secondary: oklch(0.269 0 0);
-  /* Color de texto sobre el color secundario */
   --secondary-foreground: oklch(0.985 0 0);
-  /* Color de fondo para elementos silenciados */
   --muted: oklch(0.269 0 0);
-  /* Color de texto para elementos silenciados */
   --muted-foreground: oklch(0.708 0 0);
-  /* Color de acento */
   --accent: oklch(0.269 0 0);
-  /* Color de texto sobre el color de acento */
   --accent-foreground: oklch(0.985 0 0);
-  /* Color para acciones destructivas (ej. eliminar) */
   --destructive: oklch(0.704 0.191 22.216);
-  /* Color de borde */
   --border: oklch(1 0 0 / 10%);
-  /* Color de fondo para campos de entrada */
   --input: oklch(1 0 0 / 15%);
-  /* Color del anillo de foco */
   --ring: oklch(0.556 0 0);
-  
-  /* Colores de gráficas */
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-
-  /* Colores de la barra lateral */
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -176,12 +139,5 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-sans);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  code, kbd, samp, pre {
-    font-family: var(--font-mono);
   }
 }

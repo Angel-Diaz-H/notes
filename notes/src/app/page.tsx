@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div>
-      text
       <Button>Hola</Button>
       <Button variant="outline">Outline</Button>
       <Button variant="secondary">Secondary</Button>
@@ -29,6 +28,7 @@ export default function Home() {
         {/* <Spinner /> */} +
         Submit
       </Button>
+
 
     </div>
   );
