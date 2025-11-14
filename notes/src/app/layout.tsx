@@ -1,15 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Momo_Trust_Display, Momo_Trust_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const momoTrustSans = Momo_Trust_Sans({
+  weight: ['200'],
+  variable: "--font-momo-trust-sans",
   subsets: ["latin"],
+  display: 'swap',
+  fallback: [
+    'ui-sans-serif',
+    'system-ui',
+    '-apple-system',
+    'Segoe UI',
+    'Roboto',
+    'Helvetica Neue',
+    'Arial',
+  ],
+  adjustFontFallback: false,
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const momoTrustDisplay = Momo_Trust_Display({
+  weight: '400',
+  variable: "--font-momo-trust-display",
   subsets: ["latin"],
+  display: 'swap',
+  fallback: ['ui-serif', 'Georgia', 'Times New Roman', 'Times', 'serif'],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -21,7 +37,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${momoTrustSans.className ?? ''} ${momoTrustSans.variable} ${momoTrustDisplay.className ?? ''} ${momoTrustDisplay.variable} antialiased`}
       >
         {children}
       </body>
