@@ -3,7 +3,10 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div>
+<<<<<<< HEAD
       text
+=======
+>>>>>>> 6a737597f065f372dcdae4be8c534ba4cf4dd36e
       <Button>Hola</Button>
       <Button variant="outline">Outline</Button>
       <Button variant="secondary">Secondary</Button>
