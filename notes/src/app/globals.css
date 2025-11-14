@@ -4,10 +4,15 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* Color de fondo y texto*/
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* Fuente */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Color principal */
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -16,27 +21,49 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
+
+  /* Colores de gráficas*/
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
   --color-chart-2: var(--chart-2);
   --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
+
+
+  /* Colores principales */
   --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  /* Color del anillo de foco */
+  --color-ring: var(--ring);
+  /* Color de fondo para campos de entrada */
+  --color-input: var(--input);
+  /* Color de borde */
+  --color-border: var(--border);
+  /* Color para acciones destructivas (ej. eliminar) */
+  --color-destructive: var(--destructive);
+  /* Color de texto sobre el color de acento */
+  --color-accent-foreground: var(--accent-foreground);
+  /* Color de acento */
+  --color-accent: var(--accent);
+  /* Color de texto para elementos silenciados */
+  --color-muted-foreground: var(--muted-foreground);
+  /* Color de fondo para elementos silenciados */
+  --color-muted: var(--muted);
+  /* Color de texto sobre el color secundario */
+  --color-secondary-foreground: var(--secondary-foreground);
+  /* Color secundario */
+  --color-secondary: var(--secondary);
+  /* Color de texto para popovers */
   --color-popover-foreground: var(--popover-foreground);
+  /* Color de fondo para popovers */
   --color-popover: var(--popover);
+  /* Color de texto para tarjetas */
   --color-card-foreground: var(--card-foreground);
+  /* Color de fondo para tarjetas */
   --color-card: var(--card);
+
+  /* Radios de borde */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -44,14 +71,17 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  /* Color de fondo y texto */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
+
+
+  --radius: 0.625rem;
+  --primary: oklch(0.3164 0.05312500000000002 195);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -59,15 +89,17 @@
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
+  --destructive: oklch(0.356 0.136 27.14);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
+
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -79,29 +111,51 @@
 }
 
 .dark {
+  /* Color de fondo y texto */
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
+
+  /* Color principal */
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
+
+  /* Color de fondo para tarjetas */
+  --card: oklch(0.205 0 0);
+  /* Color de texto para tarjetas */
+  --card-foreground: oklch(0.985 0 0);
+  /* Color de fondo para popovers */
+  --popover: oklch(0.205 0 0);
+  /* Color de texto para popovers */
+  --popover-foreground: oklch(0.985 0 0);
+  /* Color secundario */
   --secondary: oklch(0.269 0 0);
+  /* Color de texto sobre el color secundario */
   --secondary-foreground: oklch(0.985 0 0);
+  /* Color de fondo para elementos silenciados */
   --muted: oklch(0.269 0 0);
+  /* Color de texto para elementos silenciados */
   --muted-foreground: oklch(0.708 0 0);
+  /* Color de acento */
   --accent: oklch(0.269 0 0);
+  /* Color de texto sobre el color de acento */
   --accent-foreground: oklch(0.985 0 0);
+  /* Color para acciones destructivas (ej. eliminar) */
   --destructive: oklch(0.704 0.191 22.216);
+  /* Color de borde */
   --border: oklch(1 0 0 / 10%);
+  /* Color de fondo para campos de entrada */
   --input: oklch(1 0 0 / 15%);
+  /* Color del anillo de foco */
   --ring: oklch(0.556 0 0);
+  
+  /* Colores de gráficas */
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
+
+  /* Colores de la barra lateral */
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
